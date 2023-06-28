@@ -35,6 +35,11 @@ p {
   border-style: solid;
   border-color: red; */
 }
+button {
+  width: 54px;
+  height: 32px;
+  color: blue;
+}
 
 .visually-hidden {
   position: absolute;
