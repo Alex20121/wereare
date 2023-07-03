@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  background-color: #111;
+}
 ul,
 ol {
   list-style: none;
@@ -11,6 +13,7 @@ ol {
 
 a {
   text-decoration: none;
+  background-color: aliceblue;
 }
 
 img {
@@ -21,7 +24,7 @@ img {
 
 p {
   width: 500px;
-
+  background-color: aliceblue;
   padding: 20px 15px 30px 15px; /* за часовою стрілкою починаючи з гори */
   padding: 200px 15px; /* 1-число (відповідає за верхній та нижній, друге число за правий та лівий )  */
   padding: 20px; /* надає заданий падінг усім сторонам */
@@ -80,8 +83,9 @@ button {
   display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: aliceblue;
   align-content: center; */
 }
 
@@ -97,4 +101,22 @@ button {
 
 .list-item:not(:last-child) {
   margin-right: 30px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #111;
+  border-radius: 4px;
+}
+
+.card.flex-start-aligned img {
+  align-self: flex-start;
 }
